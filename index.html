@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missão Aura</title>
+    <link rel="stylesheet" href="style.CSS">
+</head>
+
+<body>
+    <header>
+    </header>
+
+    <main>
+        <section id="conteudo-principal">
+            <h2>DESCUBRA SEU PERFIL</h2>
+                <div class="container">
+            <form class="formulario-contato" id="form-pesquisa" action="#" method="POST">
+                <div class="campo">
+                    <label for="nome">Nome:</label><input type="text" id="nome" name="nome" value="" placeholder="Digite seu nome" required>
+                </div>
+
+                <div class="campo">
+                    <label for="dataNascimento" class="date">Data de Nascimento</label><input type="date" name="" value="" id="dataNascimento" required>
+                </div>
+
+/*pergunta1*/
+        <div class="pergunta"> 
+            <p>Diante de uma falha crítica no propulsor da nave, qual sua primeira reação?</p>
+
+            <label><input type="radio" name="p1" value="1" required>Desmontar o painel, consertar conexões e soldar novas peças físicas.</label>
+            <label><input type="radio" name="p1" value="2">Analisar os logs do sistema e investigar a raiz quântica do problema.</label>
+            <label><input type="radio" name="p1" value="3">Sair para o exterior da nave e testar rotas alternativas de propulsão manual.</label>
+            <label><input type="radio" name="p1" value="4">Organizar a equipe, redistribuir cargas e coordenar o plano de contingência.</label>
+        </div>
+
+/*pergunta2*/
+        <div class="pergunta">
+            <p>Em qual ambiente você se sente mais produtivo e focado?</p>
+
+            <label><input type="radio" name="p2" value="1" required>Oficina de engenharia, rodeado de ferramentas e dispositivos mecânicos.</label>
+            <label><input type="radio" name="p2" value="2">Laboratório de análises com amostras biológicas e minerais desconhecidos.</label>
+            <label><input type="radio" name="p2" value="3">Terrenos abertos, colinas alienígenas e territórios inexplorados.</label>
+            <label><input type="radio" name="p2" value="4">Central de comando, telas holográficas e cronogramas estratégicos.</label>
+        </div>
+
+/*pergunta3*/
+        <div class="pergunta">
+            <p>Como você lida com uma descoberta totalmente inesperada?</p>
+
+            <label><input type="radio" name="p3" value="1" required>Penso logo em como posso utilizar isso para construir melhorias práticas.</label>
+            <label><input type="radio" name="p3" value="2">Quero coletar dados imediatos para entender o funcionamento científico por trás.</label>
+            <label><input type="radio" name="p3" value="3">Fico fascinado e quero explorar cada metro quadrado dessa novidade.</label>
+            <label><input type="radio" name="p3" value="4">Avalio os riscos, calculo o impacto na missão e ajusto os objetivos gerais.</label>
+        </div>
+
+/*pergunta4*/
+        <div class="pergunta">
+            <p>Qual o seu papel favorito em um grupo de expedição?</p>
+
+            <label><input type="radio" name="p4" value="1" required>O faz-tudo que conserta qualquer equipamento avariado.</label>
+            <label><input type="radio" name="p4" value="2">O pesquisador analítico que decifra enigmas e relatórios técnicos.</label>            
+            <label><input type="radio" name="p4" value="3">O batedor destemido que abre caminhos em terrenos desconhecidos.</label>            
+            <label><input type="radio" name="p4" value="4">O líder articulador que gerencia o cronograma e direciona a equipe.</label>            
+        </div>   
+        
+        <button type="submit" class="btn-enviar" id="btn-enviar">OBTER RESULTADO</button>
+            </form>
+        </div>
+     
+<div id="resultContainer" class="escondido">
+        <div id="secao-resultado">
+            <h2>Perfil Identificado:</h2>
+            <p><span id="resEmpate"></span></p>
+            <p>Recruta: <span id="Nome"></span></p>
+            <p>Idade Estelar: <span id="dataNascimentoResult"></span> anos</p>
+            <p>categoria: <span id="resCategoria"></span></p> 
+            <p>seu perfil é: <span id="resNomePerfil"></span></p>  
+            <p><span id="resDescricao"></span></p> 
+            <p><img id="profileImageContainer" src=""></p>
+            <button id="btn-refazer" type="button">-refaça-</button>
+        </div>
+</div>
+
+
+        </section>
+    </main>
+
+
+    <footer>
+        <p>este site foi criado pelo Miguel Schott </p>
+    </footer>
+    <script src="missão aura.js2.0.js"></script>
+</body>
+</html>

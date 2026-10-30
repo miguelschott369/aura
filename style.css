@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    background-color: #121214; /* Fundo escuro moderno */
+    color: #e1e1e6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url("img/quarteto fantástico.jfif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+header {
+    background-color: #530a10;
+    padding: 20px;
+    display: flex;
+    align-items: start;
+    border-bottom: 3px solid #ff4757; /* Linha neon vermelha/coral */
+    justify-content: space-between;
+    align-items: center;
+}
+
+h2{
+    color: #ff4757;
+    font-size: 2.0rem; 
+    text-align: center; 
+    z-index:9999;
+ 
+}
+.container {
+    flex: 1;
+    max-width: 850px;
+    width: 90%;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: #202024;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+}
+.formulario-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.pergunta {
+  margin-bottom: 30px; /* Cria um espaço de 30px abaixo de cada pergunta */
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.03); /* Fundo sutil opcional */
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  z-index:9999;
+}
+.pergunta label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    z-index:9999;
+
+}
+.campo label {
+    font-weight: bold;
+    color: #c4c4cc;
+}
+.campo input, .campo textarea {
+    padding: 12px;
+    background-color: #121214;
+    border: 1px solid #323238;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s;
+}
+.btn-enviar {
+    padding: 14px;
+    background-color: #ff4757;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.btn-Refazer {
+    padding: 14px;
+    background-color: #ff4757;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+label {
+    display: block;
+}
+footer {
+    background-color: #121214;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #202024;
+    color: #7c7c8a;
+    font-size: 0.9rem;
+}
+#resultContainer {
+  visibility: hidden;
+    position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color:#00000070;
+  z-index:9999;
+   display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+#profileImageContainer {
+    width: 300px;
+}
+/* Estilo da caixa que vai aparecer */
+#secao-resultado {
+    border: 1px solid #ccc;
+    display: inline-block;
+    flex: 1;
+    max-width: 850px;
+    width: 90%;
+    padding: 25px;
+    background-color: #202024;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsividade Específica para telas menores que 500px */
+@media (max-width: 500px) {
+    header {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav {
+        flex-direction: column; /* Menu vira uma lista vertical no celular */
+        width: 100%;
+        gap: 8px;
+    }
+
+    nav a {
+        text-align: center;
+        width: 100%;
+    }
+
+    .container {
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    .galeria-curiosidades {
+        flex-direction: column; /* Imagens ficam uma em cima da outra */
+    }
+
+    .img-curiosidade {
+        width: 100%;
+        height: 180px;
+    }
+}
+
